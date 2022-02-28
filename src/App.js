@@ -9,8 +9,8 @@ function App() {
     </div>);
 }
 
-function HelloWorld(props) {
-    return (<h1>Hello, {props.name}</h1>)
+function HelloWorld({name, greeting = 'Hello'}) {
+    return (<h1>{greeting}, {name}</h1>)
 }
 
 export default App;
