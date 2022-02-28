@@ -1,11 +1,12 @@
 import './App.css';
 import PropTypes from 'prop-types';
 
+import {Counter} from "./Counter";
+
 function App() {
     return (<div className="App">
         <header className="App-header">
-            <HelloWorld name={'Joe'}/>
-            <HelloWorld name={'World'}/>
+            <Counter/>
         </header>
     </div>);
 }
