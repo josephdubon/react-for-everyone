@@ -28,7 +28,11 @@ export function MoviesList() {
             {/* Change to lowercase to implement non-case sensitive filter */}
             {movies.filter((movie) => movie.title.toLowerCase()
                 .includes(filter))
-                .map((movie) => <Movie key={movie.id} movie={movie}/>)}
+                .map((movie) =>
+                    <Movie
+                        key={movie.id}
+                        config={config}
+                        movie={movie}/>)}
         </ul>
     </div>)
 }
