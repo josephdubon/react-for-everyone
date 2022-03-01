@@ -7,15 +7,18 @@ import {BrowserRouter, Route, Routes,} from "react-router-dom";
 import {Accordion} from "./Accordion";
 import {Counter} from "./Counter";
 import {MoviesList} from "./movies/MovieLists";
+import {MovieDetail} from "./movies/MovieDetail";
 
 ReactDOM.render(
     <React.StrictMode>
         <BrowserRouter>
             <Routes>
-                <Route path="/" element={<App/>}/>
-                <Route path="accordion" element={<Accordion/>}/>
-                <Route path="counter" element={<Counter/>}/>
-                <Route path="movies-list" element={<MoviesList/>}/>
+                <Route path="/" element={<App/>}>
+                    <Route path="accordion" element={<Accordion/>}/>
+                    <Route path="counter" element={<Counter/>}/>
+                    <Route path="movies-list" element={<MoviesList/>}/>
+                    <Route path="movie-detail" element={<MovieDetail/>}/>
+                </Route>
             </Routes>
         </BrowserRouter>
     </React.StrictMode>,
