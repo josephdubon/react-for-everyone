@@ -21,5 +21,12 @@ Movie.propTypes = {
         id: PropTypes.string.isRequired,
         title: PropTypes.string.isRequired,
         poster_path: PropTypes.string.isRequired
-    }).isRequired
+    }).isRequired,
+
+    config: PropTypes.shape({
+        images: PropTypes.shape({
+            base_url: PropTypes.string,
+        }),
+    })
+
 }
