@@ -21,7 +21,7 @@ function App() {
             <Input/>
             <hr/>
 
-            <p>Loop Example</p>
+            <p>Loop and Filter/Search Example</p>
             <MoviesList/>
             <hr/>
 
