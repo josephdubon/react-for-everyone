@@ -4,7 +4,6 @@ import {Link, Outlet} from "react-router-dom";
 function Nav() {
     return (<div className="App">
         <header className="App-header">
-
             <h1>React Examples</h1>
             <h5>Author: Joseph Dubon</h5>
             <nav
