@@ -1,4 +1,6 @@
 import {useState} from 'react'
+import {Movie} from "./Movie";
+import {Filter} from "../Filter";
 
 const movies = [{id: 1, name: 'Juice'}, {id: 2, name: 'Don\'t Be A Menace'}, {id: 3, name: 'A Goofy Movie'},]
 
