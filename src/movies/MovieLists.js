@@ -6,12 +6,7 @@ export function MoviesList() {
     const [filter, setFilter] = useState('')
 
     return (<div>
-        {/* Search box */}
-        Filter: <input
-        type="text"
-        onChange={(e) => setFilter(e.target.value)} value={filter}
-    />
-
+        <Filter filter={filter} setFilter={setFilter}/>
         <ul>
             {/* Change to lowercase to implement non-case sensitive filter */}
             {movies.filter((movie) =>
