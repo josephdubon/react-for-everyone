@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types'
 
-export function Movie({movie}) {
+export function Movie({movie, config}) {
     return (
         <>
             <li>
@@ -18,6 +18,7 @@ export function Movie({movie}) {
 
 Movie.propTypes = {
     movie: PropTypes.shape({
-        title: PropTypes.string.isRequired
+        title: PropTypes.string.isRequired,
+        poster_path: PropTypes.string.isRequired
     }).isRequired
 }
