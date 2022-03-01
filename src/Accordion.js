@@ -1,7 +1,6 @@
 import {useState} from "react";
 
 import './App.css';
-import Nav from "./Nav";
 
 export function Accordion() {
     const [isToggle, setIsToggle] = useState(false) // default to hidden
@@ -9,7 +8,6 @@ export function Accordion() {
 
     return (
         <div className="App">
-            <Nav/>
             {showMe}
             <button
                 onClick={() => {
