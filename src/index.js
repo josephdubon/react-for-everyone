@@ -17,7 +17,7 @@ ReactDOM.render(
                     <Route path="accordion" element={<Accordion/>}/>
                     <Route path="counter" element={<Counter/>}/>
                     <Route path="movies-list" element={<MoviesList/>}/>
-                    <Route path="movie-detail" element={<MovieDetail/>}/>
+                    <Route path="movie/:id" element={<MovieDetail/>}/>
                 </Route>
             </Routes>
         </BrowserRouter>
