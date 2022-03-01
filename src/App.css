@@ -57,5 +57,8 @@
 
 .movie-item img {
     box-shadow: 6px 6px 4px rgba(0, 0, 0, 0.5);
+}
 
+.movie-item h5 {
+    font-size: 16px;
 }
