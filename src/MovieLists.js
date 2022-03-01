@@ -1,13 +1,11 @@
-const movies = [{name: 'Juice'}, {name: 'Don\'t Be A Menace'}, {name: 'A Goofy Movie'},]
+const movies = [{id: 1, name: 'Juice'}, {id: 2, name: 'Don\'t Be A Menace'}, {id: 3, name: 'A Goofy Movie'}]
 
 export function MoviesList() {
     return (<div>
         <ul>
             {movies.map((movie) => {
                 return (
-                    <div>
-                        <li key={movie.name}>{movie.name}</li>
-                    </div>
+                    <li key={movie.id}>{movie.name}</li>
                 )
             })}
         </ul>
