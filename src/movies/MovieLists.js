@@ -1,6 +1,7 @@
 import {useEffect, useState} from 'react'
 import {Movie} from "./Movie";
 import {Filter} from "../Filter";
+import Nav from "../Nav";
 
 const API_URL = 'https://api.themoviedb.org/3/discover/movie?api_key=66fc13ab589d1d905e3a3546e4bbc9f2&language=en-US&sort_by=popularity.desc&include_adult=false&include_video=false&page=1&with_watch_monetization_types=flatrate'
 const CONFIG_URL = 'https://api.themoviedb.org/3/configuration?api_key=66fc13ab589d1d905e3a3546e4bbc9f2'
@@ -36,6 +37,7 @@ export function MoviesList() {
     }, [])
 
     return (<div>
+        <Nav/>
         <Filter filter={filter} setFilter={setFilter}/>
         <ul className='movies-list'>
             {/* Change to lowercase to implement non-case sensitive filter */}
