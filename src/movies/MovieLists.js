@@ -10,8 +10,11 @@ export function MoviesList() {
         <ul>
             {/* Change to lowercase to implement non-case sensitive filter */}
             {movies.filter((movie) =>
-                movie.name.toLowerCase().includes(filter)).map((movie) =>
-                <li key={movie.id}>{movie.name}</li>)}
+                movie.name.toLowerCase()
+                    .includes(filter))
+                .map((movie) =>
+                    <Movie key={movie.id} movie={movie}/>
+                )}
         </ul>
     </div>)
 }
