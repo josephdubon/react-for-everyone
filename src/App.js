@@ -4,18 +4,27 @@ import PropTypes from 'prop-types';
 import {Counter} from './Counter'
 import {Accordion} from './Accordion'
 import {Input} from './Input'
+import {MoviesList} from "./MovieLists";
 
 function App() {
     return (<div className="App">
         <header className="App-header">
             <p>Counter Example</p>
             <Counter/>
+            <hr/>
 
             <p>Accordion Example</p>
             <Accordion/>
+            <hr/>
 
             <p>Input Example</p>
             <Input/>
+            <hr/>
+
+            <p>Loop Example</p>
+            <MoviesList/>
+            <hr/>
+
         </header>
     </div>)
 }
