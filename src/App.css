@@ -54,6 +54,26 @@ body {
     width: 100%;
     margin: 5px;
     white-space: nowrap;
+    animation-duration: 450ms;
+    animation-iteration-count: 1;
+    transform-origin: bottom;
+}
+
+.movie-item:hover {
+    animation-name: bounce;
+    animation-timing-function: ease;
+}
+
+@keyframes bounce {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-50px);
+    }
+    100% {
+        transform: translateY(0);
+    }
 }
 
 .movie-item img {
