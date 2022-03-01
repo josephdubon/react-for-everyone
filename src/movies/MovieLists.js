@@ -37,7 +37,7 @@ export function MoviesList() {
 
     return (<div>
         <Filter filter={filter} setFilter={setFilter}/>
-        <ul>
+        <ul className='movies-list'>
             {/* Change to lowercase to implement non-case sensitive filter */}
             {movies.filter((movie) => movie.title.toLowerCase()
                 .includes(filter))
