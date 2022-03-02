@@ -3,8 +3,8 @@ import {Movie} from "./Movie";
 import {Filter} from "../Filter";
 
 // exposed api key -it is okay it is a free one
-const API_URL = 'https://api.themoviedb.org/3/discover/movie?api_key=66fc13ab589d1d905e3a3546e4bbc9f2&language=en-US&sort_by=popularity.desc&include_adult=false&include_video=false&page=1&with_watch_monetization_types=flatrate'
-const CONFIG_URL = 'https://api.themoviedb.org/3/configuration?api_key=66fc13ab589d1d905e3a3546e4bbc9f2'
+const API_URL = 'https://api.themoviedb.org/3/discover/movie?&language=en-US&sort_by=popularity.desc&include_adult=false&include_video=false&page=1&with_watch_monetization_types=flatrate&api_key='
+const CONFIG_URL = 'https://api.themoviedb.org/3/configuration?api_key='
 
 export function MoviesList() {
     const [filter, setFilter] = useState('')
@@ -13,7 +13,7 @@ export function MoviesList() {
 
     const getMovies = async () => {
         try {
-            const res = await fetch(API_URL)
+            const res = await fetch(API_URL + process.env.REACT_APP_API_KEY)
             const movies = await res.json()
             setMovies(movies.results)
         } catch (e) {
@@ -23,7 +23,7 @@ export function MoviesList() {
 
     const getConfig = async () => {
         try {
-            const res = await fetch(CONFIG_URL)
+            const res = await fetch(CONFIG_URL + process.env.REACT_APP_API_KEY)
             const config = await res.json()
             setConfig(config)
         } catch (e) {
@@ -42,11 +42,10 @@ export function MoviesList() {
             {/* Change to lowercase to implement non-case sensitive filter */}
             {movies.filter((movie) => movie.title.toLowerCase()
                 .includes(filter))
-                .map((movie) =>
-                    <Movie
-                        key={movie.id}
-                        config={config}
-                        movie={movie}/>)}
+                .map((movie) => <Movie
+                    key={movie.id}
+                    config={config}
+                    movie={movie}/>)}
         </ul>
     </div>)
 }
