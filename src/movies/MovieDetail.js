@@ -19,7 +19,7 @@ export function MovieDetail() {
     }
 
     useEffect(() => {
-        getMovie().then(r => console.log(movie))
+        getMovie()
     }, [id])
 
     if (!movie.title) return null
