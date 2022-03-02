@@ -11,10 +11,10 @@ import {MovieDetail} from "./movies/MovieDetail";
 
 ReactDOM.render(
     <React.StrictMode>
-        <BrowserRouter>
+        <BrowserRouter basename={window.location.pathname || ''}>
             <Routes>
                 <Route path="/" element={<App/>}>
-                    <Route path="accordion" element={<Accordion/>}/>
+                    <Route exact path="accordion" element={<Accordion/>}/>
                     <Route path="counter" element={<Counter/>}/>
                     <Route path="movies-list" element={<MoviesList/>}/>
                     <Route path="movie/:id" element={<MovieDetail/>}/>
