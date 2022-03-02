@@ -83,3 +83,30 @@ body {
 .movie-item h5 {
     font-size: 16px;
 }
+
+.detail-details {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    text-align: left;
+    gap: 20px;
+    padding: 20px;
+}
+
+.backdrop_poster {
+    width: 100vw;
+    box-shadow: 6px 6px 4px rgba(0, 0, 0, 0.5);
+
+}
+
+.movie_poster {
+    flex: 3;
+    box-shadow: 6px 6px 4px rgba(0, 0, 0, 0.5);
+}
+
+.genres {
+    font-size: .8em;
+    list-style-type: none;
+    text-align: left;
+}
+
