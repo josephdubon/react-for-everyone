@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/react-for-everyone/static/css/main.660c00b5.css",
-    "main.js": "/react-for-everyone/static/js/main.869c52fc.js",
-    "static/js/787.fd0cb450.chunk.js": "/react-for-everyone/static/js/787.fd0cb450.chunk.js",
-    "index.html": "/react-for-everyone/index.html",
-    "main.660c00b5.css.map": "/react-for-everyone/static/css/main.660c00b5.css.map",
-    "main.869c52fc.js.map": "/react-for-everyone/static/js/main.869c52fc.js.map",
-    "787.fd0cb450.chunk.js.map": "/react-for-everyone/static/js/787.fd0cb450.chunk.js.map"
+    "main.css": "/static/css/main.660c00b5.css",
+    "main.js": "/static/js/main.6d4a5125.js",
+    "static/js/787.fd0cb450.chunk.js": "/static/js/787.fd0cb450.chunk.js",
+    "index.html": "/index.html",
+    "main.660c00b5.css.map": "/static/css/main.660c00b5.css.map",
+    "main.6d4a5125.js.map": "/static/js/main.6d4a5125.js.map",
+    "787.fd0cb450.chunk.js.map": "/static/js/787.fd0cb450.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.660c00b5.css",
-    "static/js/main.869c52fc.js"
+    "static/js/main.6d4a5125.js"
   ]
 }
